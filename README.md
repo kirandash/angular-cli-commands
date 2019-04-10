@@ -20,3 +20,9 @@ Build project for production: npm run build to run ng build
 ### 4. Building project for dev and production
 npm run build --env=prod
 npm run build --env=dev
+
+### 5. Creating a project with Advanced options
+Previously set up routing: ng new my-project-one --routing (This will create a new routing module inside app folder)
+Use scss instead of css: ng new my-project-two --style=scss (This will create scss files instead of css files)
+Have multiple options: ng new my-project-two --style=scss --routing
+ng new my-project-two --style=scss --routing --prefix=bg
