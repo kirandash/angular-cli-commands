@@ -39,3 +39,9 @@ How to control which files to move or not from assets: Move only img2 folder fil
     }
 ],
 Always a better idea to have all files from assets and controllable files or folders from a new folder eg: misc-assets
+
+### 7. Reset angular.json file
+"assets": [
+    "src/favicon.ico",
+    "src/assets"
+],
