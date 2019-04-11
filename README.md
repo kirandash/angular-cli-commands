@@ -118,3 +118,18 @@ npm run build:prod
 skip
 ng build --prod --stats-json
 http://webpack.github.io/analyse/
+
+### 19. ng test
+karma is used to test our application by default. And to run the tests it uses the default browser i.e. chrome. (karma.conf.js)
+Run the command ng test.
+It will fail e.g. if in app.component.html, the h1 title tag has a different text then what's mentioned in app.component.spec.ts
+
+ng test --code-coverage
+To get a detailed report of code coverage in coverage folder. It will tell which codes were run during test and which were not. Note that the codes to execute or not are decided by test cases in spec.ts file.
+
+ChromeHeadless
+By default full fledged chrome is launched in order to perform the test. But in order to save some load we can use the ChromeHeadless option in browser for karma.conf.js and run the test silently in chrome without launching it.
+
+End to End Test:
+ng e2e
+Run the above command and launch the app on chrome. It will auto run the app and finish the testing for us.
