@@ -59,4 +59,14 @@ ng serve: Builds the files in memory and launches on a port. Also refreshes auto
 Change package.json file
 ng serve --open: After launching the app, open it in browser: 
 ng serve --port=9099 --open: Compile, build the files and Launch app on port 9099 and open in browser
-ng serve --host=kirandash.com --open (Note that the host name must be present in hosts file located at: c:\Windows\System32\Drivers\etc\hosts)
+ng serve --host=kirandash.com --open (Note that the host name must be present in hosts file located at: c:\Windows\System32\Drivers\etc\hosts as 127.0.0.1 kirandash.com)
+
+### 10. ng generate component
+ng generate --help (To see all the options we have)
+ng g c recipe-item --dry-run (To see what will happen if you run the command)
+ng g c recipe-item --flat --dry-run (--flat option the components are directly created under app folder without it's own folder)
+ng g c recipe-item (To actually render the component folder) Note that this component is used in app module
+
+### 11. ng generate module
+ng g m main-items (Generate a module)
+ng g c main-items/recipe-main-item --module=main-items
