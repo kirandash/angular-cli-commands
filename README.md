@@ -71,5 +71,8 @@ ng g c recipe-item (To actually render the component folder) Note that this comp
 ng g m main-items (Generate a module)
 ng g c main-items/recipe-main-item --module=main-items
 
-### 12. ng generate directives
+### 12. ng generate directive
 ng g d main-items/directives/custominput --module=main-items (ng gen dir path modulename)
+
+### 13. ng g service
+ng g s my-services/recipe-api
