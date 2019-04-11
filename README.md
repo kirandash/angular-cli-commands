@@ -59,6 +59,8 @@ ng serve: Builds the files in memory and launches on a port. Also refreshes auto
 Change package.json file
 ng serve --open: After launching the app, open it in browser: 
 ng serve --port=9099 --open: Compile, build the files and Launch app on port 9099 and open in browser
+
+skip
 ng serve --host=kirandash.com --open (Note that the host name must be present in hosts file located at: c:\Windows\System32\Drivers\etc\hosts as 127.0.0.1 kirandash.com)
 
 ### 10. ng generate component
@@ -94,3 +96,25 @@ ng g enum enums/recipe-type
 ng generate guard payment
 Import the guard in app module providers
 And modify the guard code.
+
+### 18. Building Angular Application
+Angular cli uses the command: ng build with webpack and does the following things for us: 
+Compile typescript files,
+build all packages,
+minify files,
+compiling scss to css,
+inlining css,
+adding scoped css,
+moving assets etc.
+
+ng build
+output: dist folder
+By default it runs in development mode (Thus non optimized files in dist folder)
+ng build --prod (It will now have optimized files in dist folder)
+
+Add another script in package.json file
+npm run build:prod
+
+skip
+ng build --prod --stats-json
+http://webpack.github.io/analyse/
