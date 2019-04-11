@@ -80,3 +80,6 @@ ng g s my-services/recipe-api
 ### 14. ng g pipe
 ng g p pipes/addcommas (The pipe is added by default to app.module)
 ng g p pipes/removecommas --module=main-items
+
+### 15. ng generate class
+ng g class class/recipe
