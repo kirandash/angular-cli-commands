@@ -83,3 +83,7 @@ ng g p pipes/removecommas --module=main-items
 
 ### 15. ng generate class
 ng g class class/recipe
+
+### 16. ng generate interface
+ng g interface interfaces/recipe
+ng g enum enums/recipe-type
