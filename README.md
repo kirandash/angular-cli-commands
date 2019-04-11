@@ -76,3 +76,7 @@ ng g d main-items/directives/custominput --module=main-items (ng gen dir path mo
 
 ### 13. ng g service
 ng g s my-services/recipe-api
+
+### 14. ng g pipe
+ng g p pipes/addcommas (The pipe is added by default to app.module)
+ng g p pipes/removecommas --module=main-items
