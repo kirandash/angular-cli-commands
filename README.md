@@ -54,8 +54,9 @@ angular.json file
     "node_modules/bootstrap/dist/css/bootstrap.min.css"
 ]
 
-### 9. Installing Bootstrap JS
-angular.json file
-"scripts": [
-    "node_modules/bootstrap/dist/js/bootstrap.min.js"
-]
+### 9. npm start or ng serve with Advanced options
+ng serve: Builds the files in memory and launches on a port. Also refreshes automatically when there is any code change
+Change package.json file
+ng serve --open: After launching the app, open it in browser: 
+ng serve --port=9099 --open: Compile, build the files and Launch app on port 9099 and open in browser
+ng serve --host=kirandash.com --open (Note that the host name must be present in hosts file located at: c:\Windows\System32\Drivers\etc\hosts)
