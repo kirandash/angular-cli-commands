@@ -84,6 +84,13 @@ ng g p pipes/removecommas --module=main-items
 ### 15. ng generate class
 ng g class class/recipe
 
-### 16. ng generate interface
+### 16. ng generate interface and enums
+Interfaces helps us define data types for our data with the help of data (No need of creating classes, if there is no logic)
 ng g interface interfaces/recipe
 ng g enum enums/recipe-type
+
+### 17. ng generate guard
+(Route Guard helps us protect certain routes)
+ng generate guard payment
+Import the guard in app module providers
+And modify the guard code.

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RecipeItemComponent } from './recipe-item/recipe-item.component';
 import { AddcommasPipe } from './pipes/addcommas.pipe';
+import { PaymentGuard } from './guards/payment.guard';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { AddcommasPipe } from './pipes/addcommas.pipe';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [PaymentGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
