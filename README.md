@@ -53,3 +53,9 @@ angular.json file
     "src/styles.css",
     "node_modules/bootstrap/dist/css/bootstrap.min.css"
 ]
+
+### 9. Installing Bootstrap JS
+angular.json file
+"scripts": [
+    "node_modules/bootstrap/dist/js/bootstrap.min.js"
+]
