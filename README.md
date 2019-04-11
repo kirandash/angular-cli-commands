@@ -45,3 +45,11 @@ Always a better idea to have all files from assets and controllable files or fol
     "src/favicon.ico",
     "src/assets"
 ],
+
+### 8. Installing Bootstrap
+npm install bootstrap
+angular.json file
+"styles": [
+    "src/styles.css",
+    "node_modules/bootstrap/dist/css/bootstrap.min.css"
+]
